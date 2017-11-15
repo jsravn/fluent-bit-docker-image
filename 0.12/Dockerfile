@@ -2,13 +2,15 @@ FROM gcr.io/google-containers/debian-base-amd64:0.1
 MAINTAINER Eduardo Silva <eduardo@treasure-data.com>
 LABEL Description="Fluent Bit docker image" Vendor="Fluent Organization" Version="1.1"
 
+# Sky version
+ENV SKY_VERSION skycirrus/fluent-bit-0.12.8:3
+
 # Fluent Bit version
 ENV FLB_MAJOR 0
 ENV FLB_MINOR 12
 ENV FLB_PATCH 8
 ENV FLB_VERSION sky-build
 
-# skycirrus/fluent-bit-0.12.8:2
 ENV FLB_TARBALL http://github.com/jsravn/fluent-bit/archive/sky-build.zip
 
 RUN mkdir -p /fluent-bit/bin /fluent-bit/etc /fluent-bit/log
