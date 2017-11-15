@@ -5,10 +5,11 @@ LABEL Description="Fluent Bit docker image" Vendor="Fluent Organization" Version
 # Fluent Bit version
 ENV FLB_MAJOR 0
 ENV FLB_MINOR 12
-ENV FLB_PATCH 5
-ENV FLB_VERSION 0.12.5
+ENV FLB_PATCH 8
+ENV FLB_VERSION sky-build
 
-ENV FLB_TARBALL http://github.com/fluent/fluent-bit/archive/v$FLB_VERSION.zip
+# skycirrus/fluent-bit-0.12.8:2
+ENV FLB_TARBALL http://github.com/jsravn/fluent-bit/archive/sky-build.zip
 
 RUN mkdir -p /fluent-bit/bin /fluent-bit/etc /fluent-bit/log
 
