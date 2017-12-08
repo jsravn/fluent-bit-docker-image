@@ -3,12 +3,12 @@ MAINTAINER Eduardo Silva <eduardo@treasure-data.com>
 LABEL Description="Fluent Bit docker image" Vendor="Fluent Organization" Version="1.1"
 
 # Sky version
-ENV SKY_VERSION skycirrus/fluent-bit-0.12.8:10
+ENV SKY_VERSION skycirrus/fluent-bit-0.12.9:1
 
 # Fluent Bit version
 ENV FLB_MAJOR 0
 ENV FLB_MINOR 12
-ENV FLB_PATCH 8
+ENV FLB_PATCH 9
 ENV FLB_VERSION sky-build
 
 ENV FLB_TARBALL http://github.com/jsravn/fluent-bit/archive/sky-build.zip
